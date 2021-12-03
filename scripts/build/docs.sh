@@ -11,7 +11,7 @@ rm -rf node_modules/typedoc/node_modules/typescript
 # !\ can cause bugs, be vigilent with it
 
 # generate docs their own version folder
-npx typedoc --out "docs/${DOCS_VERSION}" sources --theme node_modules/eledoc/bin/default/ && 
+npx typedoc --out "docs/${DOCS_VERSION}" sources  &&
 
 # & for github to display them correctly
 touch "docs/${DOCS_VERSION}/.nojekyll"
